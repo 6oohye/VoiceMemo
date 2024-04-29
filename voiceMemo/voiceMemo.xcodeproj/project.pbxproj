@@ -14,6 +14,8 @@
 		E8D846142BDF6A1600D02A23 /* voiceMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846132BDF6A1600D02A23 /* voiceMemoTests.swift */; };
 		E8D8461E2BDF6A1600D02A23 /* voiceMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8461D2BDF6A1600D02A23 /* voiceMemoUITests.swift */; };
 		E8D846202BDF6A1600D02A23 /* voiceMemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8461F2BDF6A1600D02A23 /* voiceMemoUITestsLaunchTests.swift */; };
+		E8D8462D2BDF6BA900D02A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D8462C2BDF6BA900D02A23 /* LaunchScreen.storyboard */; };
+		E8D846352BDF756700D02A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846342BDF756700D02A23 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		E8D846192BDF6A1600D02A23 /* voiceMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D8461D2BDF6A1600D02A23 /* voiceMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceMemoUITests.swift; sourceTree = "<group>"; };
 		E8D8461F2BDF6A1600D02A23 /* voiceMemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceMemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8D8462C2BDF6BA900D02A23 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8D846342BDF756700D02A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,11 @@
 		E8D846012BDF6A1500D02A23 /* voiceMemo */ = {
 			isa = PBXGroup;
 			children = (
-				E8D846022BDF6A1500D02A23 /* voiceMemoApp.swift */,
-				E8D846042BDF6A1500D02A23 /* ContentView.swift */,
+				E8D8464B2BDF781800D02A23 /* App */,
+				E8D846362BDF760100D02A23 /* Core */,
+				E8D846392BDF763100D02A23 /* Component */,
+				E8D8463C2BDF768900D02A23 /* Feature */,
+				E8D846442BDF777B00D02A23 /* Model */,
 				E8D846062BDF6A1600D02A23 /* Assets.xcassets */,
 				E8D846082BDF6A1600D02A23 /* Preview Content */,
 			);
@@ -125,6 +132,181 @@
 				E8D8461F2BDF6A1600D02A23 /* voiceMemoUITestsLaunchTests.swift */,
 			);
 			path = voiceMemoUITests;
+			sourceTree = "<group>";
+		};
+		E8D846362BDF760100D02A23 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E8D846372BDF760D00D02A23 /* Service */,
+				E8D846382BDF761700D02A23 /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E8D846372BDF760D00D02A23 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E8D846382BDF761700D02A23 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E8D846392BDF763100D02A23 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E8D8463A2BDF765500D02A23 /* CustomView */,
+				E8D8463B2BDF766B00D02A23 /* NavigatinBar */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		E8D8463A2BDF765500D02A23 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		E8D8463B2BDF766B00D02A23 /* NavigatinBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigatinBar;
+			sourceTree = "<group>";
+		};
+		E8D8463C2BDF768900D02A23 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				E8D8463D2BDF76A100D02A23 /* Onboarding */,
+				E8D8463E2BDF76ED00D02A23 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		E8D8463D2BDF76A100D02A23 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E8D8463E2BDF76ED00D02A23 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E8D8463F2BDF771000D02A23 /* TodoList */,
+				E8D846402BDF771B00D02A23 /* MemoList */,
+				E8D846412BDF772B00D02A23 /* VoiceRecorder */,
+				E8D846422BDF774C00D02A23 /* Timer */,
+				E8D846432BDF775200D02A23 /* Setting */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E8D8463F2BDF771000D02A23 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		E8D846402BDF771B00D02A23 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		E8D846412BDF772B00D02A23 /* VoiceRecorder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VoiceRecorder;
+			sourceTree = "<group>";
+		};
+		E8D846422BDF774C00D02A23 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		E8D846432BDF775200D02A23 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		E8D846442BDF777B00D02A23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8D8464A2BDF77A200D02A23 /* Path */,
+				E8D846492BDF779B00D02A23 /* Onboarding */,
+				E8D846482BDF779700D02A23 /* Home */,
+				E8D846472BDF778F00D02A23 /* Todo */,
+				E8D846462BDF778B00D02A23 /* Memo */,
+				E8D846452BDF778400D02A23 /* Timer */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8D846452BDF778400D02A23 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		E8D846462BDF778B00D02A23 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		E8D846472BDF778F00D02A23 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		E8D846482BDF779700D02A23 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E8D846492BDF779B00D02A23 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E8D8464A2BDF77A200D02A23 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		E8D8464B2BDF781800D02A23 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E8D846022BDF6A1500D02A23 /* voiceMemoApp.swift */,
+				E8D846342BDF756700D02A23 /* AppDelegate.swift */,
+				E8D846042BDF6A1500D02A23 /* ContentView.swift */,
+				E8D8462C2BDF6BA900D02A23 /* LaunchScreen.storyboard */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D8462D2BDF6BA900D02A23 /* LaunchScreen.storyboard in Resources */,
 				E8D8460A2BDF6A1600D02A23 /* Preview Assets.xcassets in Resources */,
 				E8D846072BDF6A1600D02A23 /* Assets.xcassets in Resources */,
 			);
@@ -257,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D846352BDF756700D02A23 /* AppDelegate.swift in Sources */,
 				E8D846052BDF6A1500D02A23 /* ContentView.swift in Sources */,
 				E8D846032BDF6A1500D02A23 /* voiceMemoApp.swift in Sources */,
 			);
@@ -427,9 +611,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,9 +640,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
