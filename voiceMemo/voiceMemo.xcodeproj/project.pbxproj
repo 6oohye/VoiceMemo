@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E8D846032BDF6A1500D02A23 /* voiceMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846022BDF6A1500D02A23 /* voiceMemoApp.swift */; };
-		E8D846052BDF6A1500D02A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846042BDF6A1500D02A23 /* ContentView.swift */; };
+		E8D846052BDF6A1500D02A23 /* onboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846042BDF6A1500D02A23 /* onboardingView.swift */; };
 		E8D846072BDF6A1600D02A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D846062BDF6A1600D02A23 /* Assets.xcassets */; };
 		E8D8460A2BDF6A1600D02A23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D846092BDF6A1600D02A23 /* Preview Assets.xcassets */; };
 		E8D846142BDF6A1600D02A23 /* voiceMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846132BDF6A1600D02A23 /* voiceMemoTests.swift */; };
@@ -16,6 +16,10 @@
 		E8D846202BDF6A1600D02A23 /* voiceMemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8461F2BDF6A1600D02A23 /* voiceMemoUITestsLaunchTests.swift */; };
 		E8D8462D2BDF6BA900D02A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D8462C2BDF6BA900D02A23 /* LaunchScreen.storyboard */; };
 		E8D846352BDF756700D02A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846342BDF756700D02A23 /* AppDelegate.swift */; };
+		E8D8464D2BDF880200D02A23 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8464C2BDF880200D02A23 /* Color+Extension.swift */; };
+		E8D8464F2BDF8B2F00D02A23 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8464E2BDF8B2F00D02A23 /* OnboardingContent.swift */; };
+		E8D846512BDF8CDF00D02A23 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846502BDF8CDF00D02A23 /* OnboardingViewModel.swift */; };
+		E8D846532BDF8F4900D02A23 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846522BDF8F4900D02A23 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 /* Begin PBXFileReference section */
 		E8D845FF2BDF6A1500D02A23 /* voiceMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voiceMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D846022BDF6A1500D02A23 /* voiceMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceMemoApp.swift; sourceTree = "<group>"; };
-		E8D846042BDF6A1500D02A23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E8D846042BDF6A1500D02A23 /* onboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingView.swift; sourceTree = "<group>"; };
 		E8D846062BDF6A1600D02A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8D846092BDF6A1600D02A23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8D8460F2BDF6A1600D02A23 /* voiceMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +52,10 @@
 		E8D8461F2BDF6A1600D02A23 /* voiceMemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceMemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E8D8462C2BDF6BA900D02A23 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8D846342BDF756700D02A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8D8464C2BDF880200D02A23 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E8D8464E2BDF8B2F00D02A23 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		E8D846502BDF8CDF00D02A23 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		E8D846522BDF8F4900D02A23 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +161,7 @@
 		E8D846382BDF761700D02A23 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E8D8464C2BDF880200D02A23 /* Color+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -192,6 +201,8 @@
 		E8D8463D2BDF76A100D02A23 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				E8D846522BDF8F4900D02A23 /* OnboardingView.swift */,
+				E8D846502BDF8CDF00D02A23 /* OnboardingViewModel.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -287,6 +298,7 @@
 		E8D846492BDF779B00D02A23 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				E8D8464E2BDF8B2F00D02A23 /* OnboardingContent.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -303,7 +315,7 @@
 			children = (
 				E8D846022BDF6A1500D02A23 /* voiceMemoApp.swift */,
 				E8D846342BDF756700D02A23 /* AppDelegate.swift */,
-				E8D846042BDF6A1500D02A23 /* ContentView.swift */,
+				E8D846042BDF6A1500D02A23 /* onboardingView.swift */,
 				E8D8462C2BDF6BA900D02A23 /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -440,9 +452,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D8464F2BDF8B2F00D02A23 /* OnboardingContent.swift in Sources */,
+				E8D846512BDF8CDF00D02A23 /* OnboardingViewModel.swift in Sources */,
 				E8D846352BDF756700D02A23 /* AppDelegate.swift in Sources */,
-				E8D846052BDF6A1500D02A23 /* ContentView.swift in Sources */,
+				E8D846052BDF6A1500D02A23 /* onboardingView.swift in Sources */,
 				E8D846032BDF6A1500D02A23 /* voiceMemoApp.swift in Sources */,
+				E8D8464D2BDF880200D02A23 /* Color+Extension.swift in Sources */,
+				E8D846532BDF8F4900D02A23 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
