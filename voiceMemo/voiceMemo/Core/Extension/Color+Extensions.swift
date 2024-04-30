@@ -1,5 +1,5 @@
 //
-//  Color+Extension.swift
+//  Color+Extensions.swift
 //  voiceMemo
 //
 //  Created by 6혜진 on 4/29/24.
