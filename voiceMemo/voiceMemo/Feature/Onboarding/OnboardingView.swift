@@ -29,8 +29,12 @@ private struct OnboardingContentView: View {
             //온보딩 셀리스트 뷰
             OnboardingCellListView(onboardingViewModel: onboardingViewModel)
             
+            Spacer()
+            
             //시작버튼 뷰
+            startBtnView()
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
@@ -55,7 +59,7 @@ private struct OnboardingCellListView: View {
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .never)) //스와이프 방식으로 넘기기
-        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 1.5)
+        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 1.3)
         .background(
             selectedIndex % 2 == 0
             ? Color.customSky
@@ -103,9 +107,28 @@ fileprivate struct OnboardingCellView: View{
         .shadow(radius: 10)
     }
 }
-    
-    
-    #Preview {
-        OnboardingView()
+
+//MARK: - 시작하기 버튼 뷰
+private struct startBtnView: View {
+    fileprivate var body: some View{
+        Button {
+            
+        } label: {
+            HStack{
+                Text("시작하기")
+                    .font(.system(size: 16, weight:.medium))
+                    .foregroundStyle(.customGreen)
+                Image("startHome")
+                    .renderingMode(.template)
+                    .foregroundStyle(.customGreen)
+                
+            }
+        }
+        .padding(.bottom, 50)
     }
+}
+
+#Preview {
+    OnboardingView()
+}
 
