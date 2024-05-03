@@ -12,8 +12,8 @@ class VoiceRecoderViewModel:NSObject, ObservableObject, AVAudioPlayerDelegate{
     // AVAudioPlayerDelegate: 음성메모에 재생, 끝지점 등 내장되어있는 delegate메서드를 사용하기 위하여 채택
     // NSObject: VAudioPlayerDelegate가 내부적으로 NSObject프로토콜을 채택하고있음. 이 프로토콜은 코어 파운데이션 속성을 가진 타입이기에 이 객체들이 실행되는 런타임시에 런타임매커니즘이 해당 프로토콜을 기반으로 동작하게됨.
     @Published var isDisplayRemoveVoiceRecoderAlert : Bool
-    @Published var isDisplayErrorAlert : Bool
-    @Published var errorAlertMessage : String
+    @Published var isDisplayAlert : Bool
+    @Published var alertMessage : String
     
     //음성메모 녹음 관련 프로퍼티
     var audioRecoder: AVAudioRecorder?
@@ -44,8 +44,8 @@ class VoiceRecoderViewModel:NSObject, ObservableObject, AVAudioPlayerDelegate{
         selectedRecordedFile: URL? = nil
     ) {
         self.isDisplayRemoveVoiceRecoderAlert = isDisplayRemoveVoiceRecoderAlert
-        self.isDisplayErrorAlert = isDisplayErrorAlert
-        self.errorAlertMessage = errorAlertMessage
+        self.isDisplayAlert = isDisplayErrorAlert
+        self.alertMessage = errorAlertMessage
         self.isRecording = isRecording
         self.isPlaying = isPlaying
         self.isPaused = isPaused
@@ -98,11 +98,11 @@ extension VoiceRecoderViewModel{
     }
     
     private func setErrorAlretMessage(_ message : String){
-        errorAlertMessage = message
+        alertMessage = message
     }
     
     private func setIsDisplayErrorAlert(_ isDisplay: Bool){
-        isDisplayErrorAlert = isDisplay
+        isDisplayAlert = isDisplay
     }
     
     private func displayAlert(message :String){
@@ -121,7 +121,7 @@ extension VoiceRecoderViewModel {
             //재생 정지 메서드
             stopPlying()
             //녹음 시작 메서드
-            stopRecording()
+            startRecording()
         }else if isRecording{
             //녹음 정지 메서드
             stopRecording()
@@ -136,17 +136,17 @@ extension VoiceRecoderViewModel {
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
             AVSampleRateKey: 12000,
-            AVNumberOfChannelsKey : 1 ,
+            AVNumberOfChannelsKey : 1,
             AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
         ]
-        do{ //우리는 녹음을 시킬 수 있어야함
-            audioRecoder = try AVAudioRecorder(url: fileURL, settings: settings)
-            audioRecoder?.record()
-            self.isRecording = true
-        }catch{
-            displayAlert(message: "녹음 중 오류가 발생했습니다.")
-        }
-    }
+        do { //우리는 녹음할 수 있어야함
+              audioRecoder = try AVAudioRecorder(url: fileURL, settings: settings)
+              audioRecoder?.record()
+              self.isRecording = true
+            } catch {
+              displayAlert(message: "음성메모 녹음 중 오류가 발생했습니다.")
+            }
+          }
     
     private func stopRecording(){
         audioRecoder?.stop()
