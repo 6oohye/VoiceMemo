@@ -10,6 +10,7 @@ import SwiftUI
 struct TodoListView: View {
     @EnvironmentObject private var pathModel : PathModel
     @EnvironmentObject private var todoListViewModel: TodoListViewModel
+    @EnvironmentObject private var homeViewModel: HomeViewModel
     
     var body: some View {
         ZStack{
@@ -51,7 +52,16 @@ struct TodoListView: View {
             }
             Button("취소", role: .cancel){ }
         }
+        .onChange(
+            of: todoListViewModel.todos,
+            perform: { todos in
+                homeViewModel.setTodosCount(todos.count)
+                
+            }
+        )
     }
+    
+    
     //    위에서 titleView를 부르는 3가지 방법
     //1
     //    var titleView:some View{
@@ -141,7 +151,7 @@ private struct TodoCellView: View {
         isRemoveSelected: Bool = false,
         todo: Todo
     ) {
-        self.isRemoveSelected = isRemoveSelected
+        _isRemoveSelected = State(initialValue: isRemoveSelected)
         self.todo = todo
     }
     

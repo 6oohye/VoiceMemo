@@ -17,13 +17,7 @@ struct OnboardingView: View {
     var body: some View {
         // 화면전환 구현
         NavigationStack(path: $pathModel.paths){
-//            OnboardingContentView(onboardingViewModel: onboardingViewModel)
-//            TodoListView()
-//                .environmentObject(todoListViewModel)
-//              MemoListView()
-//                .environmentObject(memoListViewModel)
-//            VoiceRecoderView()
-            TimerView()
+            OnboardingContentView(onboardingViewModel: onboardingViewModel)
                 .navigationDestination(
                     for: PathType.self,
                     destination: {pathType in
@@ -31,6 +25,8 @@ struct OnboardingView: View {
                         case .homeView:
                             HomeView()
                                 .navigationBarBackButtonHidden()
+                                .environmentObject(todoListViewModel)
+                                .environmentObject(memoListViewModel)
                             
                         case .todoView:
                             TodoView()
@@ -44,15 +40,12 @@ struct OnboardingView: View {
                                 : .init(memo: memo ?? .init(title: "", content: "", date: .now)),
                                 isCreateMode: isCreateMode
                             )
-                                .navigationBarBackButtonHidden()
-                                .environmentObject(memoListViewModel)
-                            
-                               
+                            .navigationBarBackButtonHidden()
+                            .environmentObject(memoListViewModel)
                         }
-                        
-                    } )
+                    }
+                )
         }
-        
         .environmentObject(pathModel) //전역적으로 사용하기 편함
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E81C80E12BE69EC900C6CF7A /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81C80E02BE69EC900C6CF7A /* Tab.swift */; };
+		E81C80E32BE69F1000C6CF7A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81C80E22BE69F1000C6CF7A /* HomeViewModel.swift */; };
 		E8D846032BDF6A1500D02A23 /* voiceMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846022BDF6A1500D02A23 /* voiceMemoApp.swift */; };
 		E8D846072BDF6A1600D02A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D846062BDF6A1600D02A23 /* Assets.xcassets */; };
 		E8D8460A2BDF6A1600D02A23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D846092BDF6A1600D02A23 /* Preview Assets.xcassets */; };
@@ -63,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E81C80E02BE69EC900C6CF7A /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		E81C80E22BE69F1000C6CF7A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E8D845FF2BDF6A1500D02A23 /* voiceMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voiceMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D846022BDF6A1500D02A23 /* voiceMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceMemoApp.swift; sourceTree = "<group>"; };
 		E8D846062BDF6A1600D02A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				E8D8465F2BE0C16200D02A23 /* HomeView.swift */,
+				E81C80E22BE69F1000C6CF7A /* HomeViewModel.swift */,
 				E8D8463F2BDF771000D02A23 /* TodoList */,
 				E8D846402BDF771B00D02A23 /* MemoList */,
 				E8D846762BE286C800D02A23 /* VoiceRecoder */,
@@ -348,6 +353,7 @@
 		E8D846482BDF779700D02A23 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E81C80E02BE69EC900C6CF7A /* Tab.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -540,10 +546,12 @@
 				E8D8464F2BDF8B2F00D02A23 /* OnboardingContent.swift in Sources */,
 				E8D8465E2BE0C13300D02A23 /* MemoView.swift in Sources */,
 				E8D846802BE2899500D02A23 /* MemoListView.swift in Sources */,
+				E81C80E32BE69F1000C6CF7A /* HomeViewModel.swift in Sources */,
 				E8D846512BDF8CDF00D02A23 /* OnboardingViewModel.swift in Sources */,
 				E8D846602BE0C16200D02A23 /* HomeView.swift in Sources */,
 				E8D846732BE0F41E00D02A23 /* TodoListViewModel.swift in Sources */,
 				E8D846882BE3B56100D02A23 /* VoiceRecoderView.swift in Sources */,
+				E81C80E12BE69EC900C6CF7A /* Tab.swift in Sources */,
 				E8D846A42BE5369E00D02A23 /* Time.swift in Sources */,
 				E8D8467E2BE2898000D02A23 /* MemoListViewModel.swift in Sources */,
 				E8D8466B2BE0E99800D02A23 /* Todo.swift in Sources */,

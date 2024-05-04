@@ -13,6 +13,7 @@ struct MemoListView: View {
     //todoView자체를 같이 스택에 쌓고 해야하니 pathModel필요
     @EnvironmentObject private var pathModel : PathModel
     @EnvironmentObject private var memoListViewModel: MemoListViewModel
+    @EnvironmentObject private var homeViewModel: HomeViewModel
     //같이 상태를 공유하고 전역적으로 사용해야하니 @EnvironmentObject로 가져감.
     
     var body: some View {
@@ -62,6 +63,13 @@ struct MemoListView: View {
             }
             Button("취소", role: .cancel){}
         }
+        .onChange(
+            of: memoListViewModel.memos ,
+            perform: {memos in
+                homeViewModel.setMemosCount(memos.count)
+                    
+            }
+        )
     }
 }
 
