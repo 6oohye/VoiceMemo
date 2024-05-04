@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct voiceMemoApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    //UIKit의 UI App Delegete와 상호작용 가넝
     var body: some Scene {
         WindowGroup {
            OnboardingView()

@@ -37,6 +37,11 @@
 		E8D846822BE3B3D500D02A23 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846812BE3B3D500D02A23 /* Double+Extensions.swift */; };
 		E8D846842BE3B54E00D02A23 /* VoiceRecoderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846832BE3B54E00D02A23 /* VoiceRecoderViewModel.swift */; };
 		E8D846882BE3B56100D02A23 /* VoiceRecoderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846872BE3B56100D02A23 /* VoiceRecoderView.swift */; };
+		E8D846A42BE5369E00D02A23 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846A32BE5369E00D02A23 /* Time.swift */; };
+		E8D846A62BE540D700D02A23 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846A52BE540D700D02A23 /* Int+Extensions.swift */; };
+		E8D846A82BE548F400D02A23 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846A72BE548F400D02A23 /* TimerViewModel.swift */; };
+		E8D846AA2BE548FC00D02A23 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846A92BE548FC00D02A23 /* TimerView.swift */; };
+		E8D846AC2BE6599900D02A23 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846AB2BE6599900D02A23 /* NotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +95,11 @@
 		E8D846812BE3B3D500D02A23 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		E8D846832BE3B54E00D02A23 /* VoiceRecoderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecoderViewModel.swift; sourceTree = "<group>"; };
 		E8D846872BE3B56100D02A23 /* VoiceRecoderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecoderView.swift; sourceTree = "<group>"; };
+		E8D846A32BE5369E00D02A23 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		E8D846A52BE540D700D02A23 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		E8D846A72BE548F400D02A23 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		E8D846A92BE548FC00D02A23 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		E8D846AB2BE6599900D02A23 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +198,7 @@
 		E8D846372BDF760D00D02A23 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E8D846AB2BE6599900D02A23 /* NotificationService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -197,6 +208,7 @@
 			children = (
 				E8D846642BE0DDE900D02A23 /* Date+Extensions.swift */,
 				E8D846812BE3B3D500D02A23 /* Double+Extensions.swift */,
+				E8D846A52BE540D700D02A23 /* Int+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -280,6 +292,8 @@
 		E8D846422BDF774C00D02A23 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				E8D846A92BE548FC00D02A23 /* TimerView.swift */,
+				E8D846A72BE548F400D02A23 /* TimerViewModel.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -307,6 +321,7 @@
 		E8D846452BDF778400D02A23 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				E8D846A32BE5369E00D02A23 /* Time.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -526,20 +541,25 @@
 				E8D846602BE0C16200D02A23 /* HomeView.swift in Sources */,
 				E8D846732BE0F41E00D02A23 /* TodoListViewModel.swift in Sources */,
 				E8D846882BE3B56100D02A23 /* VoiceRecoderView.swift in Sources */,
+				E8D846A42BE5369E00D02A23 /* Time.swift in Sources */,
 				E8D8467E2BE2898000D02A23 /* MemoListViewModel.swift in Sources */,
 				E8D8466B2BE0E99800D02A23 /* Todo.swift in Sources */,
 				E8D846592BE01F7400D02A23 /* Path.swift in Sources */,
 				E8D846672BE0E21000D02A23 /* CustomNavigationBar.swift in Sources */,
 				E8D846652BE0DDE900D02A23 /* Date+Extensions.swift in Sources */,
 				E8D846352BDF756700D02A23 /* AppDelegate.swift in Sources */,
+				E8D846AA2BE548FC00D02A23 /* TimerView.swift in Sources */,
 				E8D846712BE0F41100D02A23 /* TodoViewModel.swift in Sources */,
 				E8D8467A2BE2879E00D02A23 /* Memo.swift in Sources */,
 				E8D8467C2BE2896800D02A23 /* MemoViewModel.swift in Sources */,
 				E8D846032BDF6A1500D02A23 /* voiceMemoApp.swift in Sources */,
 				E8D8466F2BE0F3F500D02A23 /* TodoListView.swift in Sources */,
+				E8D846A82BE548F400D02A23 /* TimerViewModel.swift in Sources */,
 				E8D846842BE3B54E00D02A23 /* VoiceRecoderViewModel.swift in Sources */,
 				E8D846692BE0E24100D02A23 /* NavigationBtnType.swift in Sources */,
+				E8D846A62BE540D700D02A23 /* Int+Extensions.swift in Sources */,
 				E8D846532BDF8F4900D02A23 /* OnboardingView.swift in Sources */,
+				E8D846AC2BE6599900D02A23 /* NotificationService.swift in Sources */,
 				E8D846822BE3B3D500D02A23 /* Double+Extensions.swift in Sources */,
 				E8D846632BE0C17600D02A23 /* TodoView.swift in Sources */,
 				E8D846572BE01EDF00D02A23 /* PathType.swift in Sources */,
