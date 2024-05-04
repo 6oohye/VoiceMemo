@@ -42,6 +42,7 @@
 		E8D846A82BE548F400D02A23 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846A72BE548F400D02A23 /* TimerViewModel.swift */; };
 		E8D846AA2BE548FC00D02A23 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846A92BE548FC00D02A23 /* TimerView.swift */; };
 		E8D846AC2BE6599900D02A23 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846AB2BE6599900D02A23 /* NotificationService.swift */; };
+		E8D846AE2BE68D4C00D02A23 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846AD2BE68D4C00D02A23 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		E8D846A72BE548F400D02A23 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		E8D846A92BE548FC00D02A23 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E8D846AB2BE6599900D02A23 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		E8D846AD2BE68D4C00D02A23 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 		E8D846432BDF775200D02A23 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				E8D846AD2BE68D4C00D02A23 /* SettingView.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				E8D846032BDF6A1500D02A23 /* voiceMemoApp.swift in Sources */,
 				E8D8466F2BE0F3F500D02A23 /* TodoListView.swift in Sources */,
 				E8D846A82BE548F400D02A23 /* TimerViewModel.swift in Sources */,
+				E8D846AE2BE68D4C00D02A23 /* SettingView.swift in Sources */,
 				E8D846842BE3B54E00D02A23 /* VoiceRecoderViewModel.swift in Sources */,
 				E8D846692BE0E24100D02A23 /* NavigationBtnType.swift in Sources */,
 				E8D846A62BE540D700D02A23 /* Int+Extensions.swift in Sources */,
