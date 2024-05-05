@@ -51,8 +51,6 @@ struct VoiceRecoderView: View {
                 homeViewModel.setVoiceRecodersCount(recordedFiles.count)
             }
         )
-        
-        
     }
 }
 
@@ -149,7 +147,7 @@ private struct VoiceRecoderCellView: View {
                     VStack{
                         HStack{
                             Text(recordrdFile.lastPathComponent)
-                                .font(.system(size: 16))
+                                .font(.system(size: 16).weight(.medium))
                                 .foregroundColor(.customBlack)
                             Spacer()
                         }
@@ -283,9 +281,14 @@ private struct ProgressBar: View {
 //MARK: - 녹음 버튼 뷰
 private struct RecordBtnView: View {
     @ObservedObject private var voiceRecoderViewModel: VoiceRecoderViewModel
+    @State private var isAnimation: Bool
     
-    fileprivate init(voiceRecoderViewModel: VoiceRecoderViewModel) {
+    fileprivate init(
+        voiceRecoderViewModel: VoiceRecoderViewModel,
+        isAnimation: Bool = false
+    ) {
         self.voiceRecoderViewModel = voiceRecoderViewModel
+        self.isAnimation = isAnimation
     }
     
     fileprivate var body: some View {
@@ -301,6 +304,15 @@ private struct RecordBtnView: View {
                     }, label: {
                         if voiceRecoderViewModel.isRecording{
                             Image("mic_recording")
+                                .scaleEffect(isAnimation ? 1.5 : 1)
+                                .onAppear{
+                                    withAnimation(.spring.repeatForever()){
+                                        isAnimation.toggle()
+                                    }
+                                }
+                                .onDisappear(){
+                                    isAnimation = false
+                                }
                         }else{
                             Image("mic")
                         }

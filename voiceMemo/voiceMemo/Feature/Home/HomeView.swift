@@ -68,7 +68,6 @@ struct HomeView: View {
             }
             .environmentObject(homeViewModel)
             
-            
             //구분선
             SeperaterLineView()
         }

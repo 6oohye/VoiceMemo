@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E81C80E12BE69EC900C6CF7A /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81C80E02BE69EC900C6CF7A /* Tab.swift */; };
 		E81C80E32BE69F1000C6CF7A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81C80E22BE69F1000C6CF7A /* HomeViewModel.swift */; };
+		E81C80E52BE752ED00C6CF7A /* writeBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81C80E42BE752ED00C6CF7A /* writeBtn.swift */; };
 		E8D846032BDF6A1500D02A23 /* voiceMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D846022BDF6A1500D02A23 /* voiceMemoApp.swift */; };
 		E8D846072BDF6A1600D02A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D846062BDF6A1600D02A23 /* Assets.xcassets */; };
 		E8D8460A2BDF6A1600D02A23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D846092BDF6A1600D02A23 /* Preview Assets.xcassets */; };
@@ -67,6 +68,7 @@
 /* Begin PBXFileReference section */
 		E81C80E02BE69EC900C6CF7A /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		E81C80E22BE69F1000C6CF7A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E81C80E42BE752ED00C6CF7A /* writeBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeBtn.swift; sourceTree = "<group>"; };
 		E8D845FF2BDF6A1500D02A23 /* voiceMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voiceMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D846022BDF6A1500D02A23 /* voiceMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceMemoApp.swift; sourceTree = "<group>"; };
 		E8D846062BDF6A1600D02A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		E8D8463A2BDF765500D02A23 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				E81C80E42BE752ED00C6CF7A /* writeBtn.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				E8D846842BE3B54E00D02A23 /* VoiceRecoderViewModel.swift in Sources */,
 				E8D846692BE0E24100D02A23 /* NavigationBtnType.swift in Sources */,
 				E8D846A62BE540D700D02A23 /* Int+Extensions.swift in Sources */,
+				E81C80E52BE752ED00C6CF7A /* writeBtn.swift in Sources */,
 				E8D846532BDF8F4900D02A23 /* OnboardingView.swift in Sources */,
 				E8D846AC2BE6599900D02A23 /* NotificationService.swift in Sources */,
 				E8D846822BE3B3D500D02A23 /* Double+Extensions.swift in Sources */,
@@ -741,6 +745,7 @@
 				DEVELOPMENT_TEAM = JN2CR5DW2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -771,6 +776,7 @@
 				DEVELOPMENT_TEAM = JN2CR5DW2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
