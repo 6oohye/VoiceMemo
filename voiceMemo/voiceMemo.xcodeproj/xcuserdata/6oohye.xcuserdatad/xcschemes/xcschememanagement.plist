@@ -6,8 +6,28 @@
 	<dict>
 		<key>voiceMemo.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E8D845FE2BDF6A1500D02A23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8D8460E2BDF6A1600D02A23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8D846182BDF6A1600D02A23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
